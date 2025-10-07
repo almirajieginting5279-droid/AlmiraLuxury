@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map Dior Stores Worldwide</title>
+    <style>
+      /* untuk map agar memenuhi ukuran tertentu */
+      #map {
+        height: 500px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Lokasi Toko Dior di Dunia</h2>
+    <div id="map"></div>
+
+    <script>
+      // Data toko Dior
+      const diorStores = [
+        { name: "Dior Paris Montaigne", lat: 48.8665, lng: 2.3050 },
+        { name: "Dior Jakarta Plaza Indonesia", lat: -6.1944, lng: 106.8224 },
+        { name: "Dior Suwon, Korea", lat: 37.26455, lng: 126.9984 },
+        // tambahkan toko lain di sini
+      ];
+
+      function initMap() {
+        // pusat peta awal (contoh: tengah dunia)
+        const center = { lat: 0, lng: 0 };
+
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 2,
+          center: center,
+        });
+
+        // tambahkan marker untuk tiap toko
+        diorStores.forEach(store => {
+          const marker = new google.maps.Marker({
+            position: { lat: store.lat, lng: store.lng },
+            map: map,
+            title: store.name
+          });
+
+          // Info window (popup) ketika marker diklik
+          const infowindow = new google.maps.InfoWindow({
+            content: `<strong>${store.name}</strong>`
+          });
+
+          marker.addListener("click", () => {
+            infowindow.open(map, marker);
+          });
+        });
+      }
+    </script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>

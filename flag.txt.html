@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Change your region and language — demo</title>
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      margin:0; padding:20px;
+      background:#fff;
+      color:#111;
+    }
+    h1{font-size:28px; margin:0 0 8px;}
+    p{color:#666; margin:0 0 20px;}
+
+    .region{margin-top:30px;}
+    .region h2{font-size:20px; margin:15px 0;}
+
+    .country-grid{
+      display:grid;
+      gap:14px;
+      grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    }
+
+    .country{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding:10px;
+      border:1px solid #eee;
+      border-radius:8px;
+      cursor:pointer;
+      transition: background 0.15s;
+    }
+    .country:hover{background:#fafafa;}
+
+    .flag-img{
+      width:32px;
+      height:22px;
+      object-fit:cover;
+      border:1px solid #ddd;
+      border-radius:4px;
+    }
+
+    .meta{display:flex; flex-direction:column;}
+    .name{font-weight:600; font-size:14px;}
+    .lang{font-size:12px; color:#555;}
+  </style>
+</head>
+<body>
+  <h1>Change your region and language</h1>
+  <p>Be sure to pick the location that matches your shipping address.</p>
+
+  <div class="region">
+    <h2>Regions</h2>
+    <div class="country-grid">
+      <div class="country">
+        <img src="flags/us.png" alt="USA flag" class="flag-img">
+        <div class="meta"><div class="name">United States</div><div class="lang">English</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/ca.png" alt="Canada flag" class="flag-img">
+        <div class="meta"><div class="name">Canada</div><div class="lang">English</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/ca.png" alt="Canada flag" class="flag-img">
+        <div class="meta"><div class="name">Canada</div><div class="lang">français</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/mx.png" alt="Mexico flag" class="flag-img">
+        <div class="meta"><div class="name">México</div><div class="lang">español</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/pr.png" alt="Puerto Rico flag" class="flag-img">
+        <div class="meta"><div class="name">Puerto Rico</div><div class="lang">español</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/au.png" alt="Australia flag" class="flag-img">
+        <div class="meta"><div class="name">Australia</div><div class="lang">English</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/in.png" alt="India flag" class="flag-img">
+        <div class="meta"><div class="name">India</div><div class="lang">English</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/jp.png" alt="Japan flag" class="flag-img">
+        <div class="meta"><div class="name">日本</div><div class="lang">日本語</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/my.png" alt="Malaysia flag" class="flag-img">
+        <div class="meta"><div class="name">Malaysia</div><div class="lang">English</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/id.png" alt="Indonesia flag" class="flag-img">
+        <div class="meta"><div class="name">Indonesia</div><div class="lang">Bahasa Indonesia</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/sg.png" alt="Singapore flag" class="flag-img">
+        <div class="meta"><div class="name">Singapore</div><div class="lang">English</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/kr.png" alt="South Korea flag" class="flag-img">
+        <div class="meta"><div class="name">대한민국</div><div class="lang">한국어</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/cn.png" alt="China flag" class="flag-img">
+        <div class="meta"><div class="name">中国</div><div class="lang">中文</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/fr.png" alt="France flag" class="flag-img">
+        <div class="meta"><div class="name">France</div><div class="lang">français</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/de.png" alt="Germany flag" class="flag-img">
+        <div class="meta"><div class="name">Deutschland</div><div class="lang">Deutsch</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/it.png" alt="Italy flag" class="flag-img">
+        <div class="meta"><div class="name">Italia</div><div class="lang">italiano</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/es.png" alt="Spain flag" class="flag-img">
+        <div class="meta"><div class="name">España</div><div class="lang">español</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/uk.png" alt="UK flag" class="flag-img">
+        <div class="meta"><div class="name">United Kingdom</div><div class="lang">English</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/br.png" alt="Brazil flag" class="flag-img">
+        <div class="meta"><div class="name">Brasil</div><div class="lang">português</div></div>
+      </div>
+      <div class="country">
+        <img src="flags/za.png" alt="South Africa flag" class="flag-img">
+        <div class="meta"><div class="name">South Africa</div><div class="lang">English</div></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

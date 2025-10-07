@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <style>
+        /* Kode CSS untuk tampilan produk, untuk contoh ini kita buat sederhana saja */
+        .produk-container {
+            display: flex; /* Mengatur produk menjadi tata letak fleksibel */
+            flex-wrap: wrap; /* Memungkinkan produk terbungkus ke baris baru */
+            gap: 20px; /* Jarak antar produk */
+            justify-content: center; /* Pusatkan produk */
+            margin-top: 20px;
+        }
+        .list-produk {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 200px; /* Lebar setiap kotak produk */
+            text-align: center;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1); /* Bayangan ringan */
+        }
+        .list-produk img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .tombol {
+            display: inline-block;
+            padding: 8px 15px;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .tombol-beli {
+            background-color: #28a745;
+            margin-left: 5px; /* Jarak antar tombol */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Daftar Produk Kami</h1>
+    </header>
+
+    <div class="produk-container">
+        <!-- Produk 1 -->
+        <div class="list-produk">
+            <img src="gambar/jaket-tactical.jpg" alt="Jaket Tactical">
+            <h4>Jaket Tactical Hitam</h4>
+            <h5>Rp 230.000,-</h5>
+            <a href="#" class="tombol tombol-detail">Detail</a>
+            <a href="#" class="tombol tombol-beli">Beli</a>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="list-produk">
+            <img src="gambar/bomber-stylish.jpg" alt="Jaket Bomber Stylish">
+            <h4>Jaket Bomber Stylish</h4>
+            <h5>Rp 250.000,-</h5>
+            <a href="#" class="tombol tombol-detail">Detail</a>
+            <a href="#" class="tombol tombol-beli">Beli</a>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="list-produk">
+            <img src="gambar/jaket-naruto.jpg" alt="Jaket Naruto">
+            <h4>Jaket Naruto</h4>
+            <h5>Rp 170.000,-</h5>
+            <a href="#" class="tombol tombol-detail">Detail</a>
+            <a href="#" class="tombol tombol-beli">Beli</a>
+        </div>
+        <!-- Tambahkan produk lainnya di sini -->
+    </div>
+
+</body>
+</html>
